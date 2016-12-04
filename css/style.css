@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+}
+
+.board {
+	margin: 0 auto;
+	width: 800px;
+	background-color: white;
+}
+h1 {
+	text-align: center;
+}
+.column-container {
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+}
+ul {
+	list-style: none;
+}
