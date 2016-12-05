@@ -39,17 +39,17 @@ $(function() {
     			.append($columnCardList);
 
     		return $column;
-    	}
-
-    	Column.prototype = {
-    		addCard: function(card) {
-    			this.$element.children('ul').append(card.$element);
-    		},
-    		removeColumn: function() {
-    			this.$element.remove();
-    		}
     	};
   	}
+
+  	Column.prototype = {
+  		addCard: function(card) {
+  			this.$element.children('ul').append(card.$element);
+  		},
+  		removeColumn: function() {
+  			this.$element.remove();
+  		}
+  	};
 
   	function Card(description) {
 
@@ -74,13 +74,13 @@ $(function() {
 
   			return $card;
 		}
-
-		Card.prototype = {
-			removeCard: function() {
-				this.$element.remove();
-			}
-		};
   	}
+
+  	Card.prototype = {
+  		removeCard: function() {
+  			this.$element.remove();
+  		}
+  	};
 
   	var board = {
   		name: 'Tablica Kanban',
@@ -104,7 +104,7 @@ $(function() {
   		board.addColumn(column);
   	});
 
-  var todoColumn = new Column('Do zrobienia');
+  	var todoColumn = new Column('Do zrobienia');
 	var doingColumn = new Column('W trakcie');
 	var doneColumn = new Column('Skończone');
 
@@ -113,9 +113,9 @@ $(function() {
 	board.addColumn(doneColumn);
 
 	var card1 = new Card('Nowe zadanie');
-	var card2 = new Card('Stworzyc tablice kanban');
+	var card2 = new Card('Robi się!');
 
-  todoColumn.addCard(card1);
-  doingColumn.addCard(card2);
+	todoColumn.addCard(card1);
+	doingColumn.addCard(card2);
 
 });

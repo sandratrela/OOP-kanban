@@ -1,20 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker|Comfortaa);
 * {
 	box-sizing: border-box;
+	font-family: 'Comfortaa', sans-serif;
 }
 
 .board {
 	margin: 0 auto;
-	width: 800px;
-	background-color: white;
+	width: 900px;
 }
 h1 {
 	text-align: center;
+	font-size: 60px;
+	padding-top: 10px;
+	font-family: 'Permanent Marker', cursive;
 }
 .column-container {
-	background-color: white;
 	display: flex;
 	justify-content: space-between;
+	background-image: url(https://static.pexels.com/photos/164642/pexels-photo-164642.jpeg);
+	background-position: cover;
+	padding: 20px;
+	border-radius: 10px;
+	min-height: 200px;
 }
 ul {
 	list-style: none;
+	min-height: 500px;
+	min-width: 100px;
+}
+button {
+	border-radius: 10px;
+	margin: 5px;
+	font-size: 18px;
+	background-color: #CD88AF;
+	border: none;
+	cursor: pointer;
+}
+li {
+	font-size: 18px;
+	cursor: pointer;
 }
